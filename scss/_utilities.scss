@@ -5,3 +5,39 @@ $grayish_blue: hsl(233, 8%, 62%);
 $light_grayish_blue: hsl(220, 16%, 96%);
 $very_light_gray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 50%;
+  padding: 4% 5%;
+  color: $white;
+  text-align: center;
+  border-radius: 25px;
+  background-image: linear-gradient(40deg, $lime_green, $bright_cyan);
+}
+
+@mixin p-style-1 {
+  font-size: 0.9em;
+  color: $grayish_blue;
+}
+
+@mixin h2-style-1 {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.2;
+  font-weight: 300;
+  color: $dark_blue;
+}
