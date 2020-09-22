@@ -1,0 +1,25 @@
+@import "config";
+@import "utilities";
+@import "nav";
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  padding: 1.5em 0;
+  height: 4.5em;
+}
+
+.desktop-only {
+  display: none;
+}
+
+#hamburger2 {
+  display: none;
+}
+
+#show {
+  display: none;
+}
