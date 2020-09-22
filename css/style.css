@@ -1,0 +1,290 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 50%;
+  padding: 4% 5%;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  background-image: linear-gradient(40deg, #31d35c, #2bb7da);
+}
+
+nav img {
+  width: 1.4em;
+  height: 1.15em;
+}
+
+nav .navbar-links {
+  display: none;
+  background-color: rgba(150, 152, 166, 0.287);
+  position: absolute;
+  width: 100%;
+  top: 9.8%;
+  left: 0%;
+  padding: 5% 8%;
+  height: 87%;
+}
+
+nav .navbar-links ul {
+  margin: auto;
+  width: 90%;
+  background-color: white;
+  text-align: center;
+  padding: 7% 0;
+  border-radius: 0.5em;
+}
+
+nav .navbar-links ul li {
+  padding: 3% 0;
+}
+
+nav .navbar-links ul li a {
+  font-size: 1.25em;
+  color: #2d314d;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1.5em 0;
+  height: 4.5em;
+}
+
+.desktop-only {
+  display: none;
+}
+
+#hamburger2 {
+  display: none;
+}
+
+#show {
+  display: none;
+}
+
+.hero {
+  background-image: url("../images/image-mockups.png"), url("../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  height: 40em;
+  background-position: 40% -63%, 100% -70%;
+  background-size: 80% 67%, 100% 75%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 45%;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.hero_text h1 {
+  font-size: 2em;
+  line-height: 1.15;
+  font-weight: 300;
+  text-align: center;
+  margin: 1%;
+}
+
+.hero_text p {
+  font-size: 0.9em;
+  color: #9698a6;
+  text-align: justify;
+  margin: 0.5% 0 2%;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 7% 0;
+}
+
+.intro {
+  margin-bottom: 2em;
+}
+
+.intro h2 {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #2d314d;
+}
+
+.intro p {
+  font-size: 0.9em;
+  color: #9698a6;
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.feature img {
+  width: 4em;
+  height: 4em;
+}
+
+.feature h3 {
+  font-weight: 300;
+  color: #2d314d;
+}
+
+.feature p {
+  font-size: 0.9em;
+  color: #9698a6;
+  text-align: center;
+  margin-top: 0.2em;
+}
+
+.articles {
+  display: flex;
+  padding: 3em 0;
+  background-color: #fafafa;
+}
+
+.articles h2 {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #2d314d;
+}
+
+.article {
+  background-color: white;
+  margin: 2em 0;
+  border-radius: 0.5em;
+  color: #9698a6;
+  padding-bottom: 4%;
+  transform: scale(0.95, 0.95);
+  box-shadow: 0 0 2px #9698a6;
+}
+
+.article img {
+  width: 100%;
+  height: 12em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.article .article_content {
+  margin: 5% 10%;
+}
+
+.article .article_content .author {
+  font-size: 0.8em;
+}
+
+.article .article_content .article_title {
+  color: #2d314d;
+  font-weight: 400;
+}
+
+.article .article_content .article_desc {
+  font-size: 0.9em;
+  color: #9698a6;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #2d314d;
+  padding: 7% 0;
+  color: white;
+}
+
+.footer .footer_sec1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 0 1%;
+  height: 5em;
+}
+
+.footer .footer_sec1 .social_icons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.footer .footer_sec1 .social_icons a {
+  margin: 0.5em;
+}
+
+.footer .footer_sec1 .social_icons a img {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+.footer .footer_sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 7em;
+  text-align: center;
+}
+
+.footer .footer_sec2 a {
+  color: white;
+}
+
+.footer_sec3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7% 0 0;
+  height: 7em;
+}
+
+.footer_sec3 p {
+  font-size: 0.9em;
+  color: #9698a6;
+}
+/*# sourceMappingURL=style.css.map */
