@@ -36,6 +36,11 @@ a {
   color: $grayish_blue;
 }
 
+@mixin p-style-2 {
+  font-size: 1vw;
+  color: $grayish_blue;
+}
+
 @mixin h2-style-1 {
   text-align: center;
   font-size: 2em;
