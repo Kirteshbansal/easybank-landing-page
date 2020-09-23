@@ -37,10 +37,10 @@
           padding: 0;
 
           li {
-            padding: 5% 1%;
+            padding: 1.78em 0.5em;
             margin: 0 2%;
             border-bottom: 10px solid transparent;
-            transition: border-bottom 0.3 ease-in-out;
+            transition: border-bottom 0.3s ease-in-out;
 
             &:hover {
               border-bottom: 10px solid $lime_green;
