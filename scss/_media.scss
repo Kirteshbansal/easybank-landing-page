@@ -219,6 +219,11 @@
           color: $dark_blue;
           line-height: 1.35;
           font-weight: 400;
+          transition: color 0.2s ease-in-out;
+
+          &:hover {
+            color: $lime_green;
+          }
         }
 
         .article_desc {
