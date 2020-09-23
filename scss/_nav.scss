@@ -2,6 +2,7 @@ nav {
   img {
     width: 1.4em;
     height: 1.15em;
+    position: relative;
   }
 
   .navbar-links {
@@ -9,10 +10,10 @@ nav {
     background-color: hsla(233, 8%, 62%, 0.287);
     position: absolute;
     width: 100%;
-    top: 9.8%;
+    top: 4.55em;
     left: 0%;
     padding: 5% 8%;
-    height: 87%;
+    height: 100vh;
 
     ul {
       margin: auto;
