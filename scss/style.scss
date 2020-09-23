@@ -38,6 +38,9 @@
   }
 
   .hero_text {
+    .hero_img {
+      display: none;
+    }
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
