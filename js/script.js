@@ -20,3 +20,13 @@ window.addEventListener("scroll", function () {
     closeNav();
   }
 });
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 1023) {
+    hamburger2.style.display = "none";
+    hamburger1.style.display = "none";
+    show.style.display = "block";
+  } else {
+    closeNav();
+  }
+});
