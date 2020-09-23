@@ -1,0 +1,57 @@
+// media queries for screen size > 1024px
+@media only screen and (min-width: 1024px) {
+  // header section
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    padding: 0;
+    width: 100%;
+
+    &.container {
+      height: 5.5em;
+    }
+
+    #show {
+      display: block;
+    }
+
+    .desktop-only {
+      display: block;
+    }
+
+    nav {
+      width: 37%;
+      #hamburger1,
+      #hamburger2 {
+        display: none;
+      }
+      .navbar-links {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          margin: 0;
+          padding: 0;
+
+          li {
+            padding: 5% 1%;
+            margin: 0 2%;
+            border-bottom: 10px solid transparent;
+            transition: border-bottom 0.3 ease-in-out;
+
+            &:hover {
+              border-bottom: 10px solid $lime_green;
+            }
+            a {
+              font-size: 1.05em;
+              color: $dark_blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
