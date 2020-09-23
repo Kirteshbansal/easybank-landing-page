@@ -20,13 +20,15 @@ a {
   text-decoration: none;
 }
 
-.btn {
-  width: 50%;
-  padding: 4% 5%;
-  color: $white;
-  text-align: center;
-  border-radius: 25px;
-  background-image: linear-gradient(40deg, $lime_green, $bright_cyan);
+@media only screen and (max-width: 1023px) {
+  .btn {
+    width: 50%;
+    padding: 4% 5%;
+    color: $white;
+    text-align: center;
+    border-radius: 25px;
+    background-image: linear-gradient(40deg, $lime_green, $bright_cyan);
+  }
 }
 
 @mixin p-style-1 {
@@ -40,4 +42,22 @@ a {
   line-height: 1.2;
   font-weight: 300;
   color: $dark_blue;
+}
+
+@media only screen and (min-width: 1024px) {
+  .btn {
+    display: inline-block;
+    width: 10em;
+    padding: 0.7em 0.9em;
+    color: $white;
+    text-align: center;
+    border-radius: 1.3em;
+    background-image: linear-gradient(40deg, $lime_green, $bright_cyan);
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
 }
