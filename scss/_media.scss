@@ -55,6 +55,7 @@
     }
   }
 
+  // Hero image section
   .hero {
     background: $very_light_gray;
     background-image: url("../images/bg-intro-desktop.svg");
@@ -88,7 +89,7 @@
     height: 15vw;
 
     h1 {
-      font-size: 2.2vw;
+      font-size: 2.3vw;
       line-height: 1.15;
       font-weight: 300;
       text-align: left;
@@ -103,6 +104,68 @@
       font-weight: 300;
       letter-spacing: 0.4px;
       margin: 0.5% 0 2%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  // Features Section
+  .features {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $light_grayish_blue;
+    padding: 5% 0;
+  }
+
+  .intro {
+    margin-bottom: 1vw;
+    width: 45%;
+
+    h2 {
+      @include h2-style-2;
+    }
+
+    p {
+      @include p-style-2;
+      text-align: left;
+      line-height: 1.4;
+      font-weight: 300;
+    }
+  }
+
+  .features_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .feature {
+      width: 22%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin: 2vw 0;
+
+      img {
+        width: 4.2em;
+        height: 4.2em;
+      }
+
+      h3 {
+        margin-top: 1.4em;
+        font-size: 1.25vw;
+        font-weight: 300;
+        color: $dark_blue;
+      }
+
+      p {
+        @include p-style-3;
+        width: 90%;
+        font-weight: 300;
+        line-height: 1.3;
+        margin-top: 0.3em;
+      }
     }
   }
 }
