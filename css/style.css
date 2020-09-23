@@ -42,6 +42,7 @@ a {
 nav img {
   width: 1.4em;
   height: 1.15em;
+  position: relative;
 }
 
 nav .navbar-links {
@@ -49,10 +50,10 @@ nav .navbar-links {
   background-color: rgba(150, 152, 166, 0.287);
   position: absolute;
   width: 100%;
-  top: 9.8%;
+  top: 4.55em;
   left: 0%;
   padding: 5% 8%;
-  height: 87%;
+  height: 100vh;
 }
 
 nav .navbar-links ul {
