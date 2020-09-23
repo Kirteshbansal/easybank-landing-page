@@ -15,4 +15,8 @@ function closeNav() {
 
 hamburger1.addEventListener("click", openNav);
 hamburger2.addEventListener("click", closeNav);
-window.addEventListener("scroll", closeNav);
+window.addEventListener("scroll", function () {
+  if (window.innerWidth < 1024) {
+    closeNav();
+  }
+});
