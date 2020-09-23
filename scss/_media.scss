@@ -54,4 +54,55 @@
       }
     }
   }
+
+  .hero {
+    background: $very_light_gray;
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    height: 43vw;
+    background-position: 210% 65%;
+    background-size: 80% 165%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .hero_img {
+    width: 48%;
+    height: 50vw;
+    position: absolute;
+    right: 0;
+    top: 5.5em;
+    background-color: transparent;
+    background-image: url("../images/image-mockups.png");
+    background-position: 1.35vw -6vw;
+    background-size: 56vw 57vw;
+  }
+  .hero_text {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 0;
+    height: 15vw;
+
+    h1 {
+      font-size: 2.2vw;
+      line-height: 1.15;
+      font-weight: 300;
+      text-align: left;
+      margin: 0%;
+    }
+
+    p {
+      @include p-style-2;
+      text-align: left;
+      line-height: 1.4;
+      padding: 2% 0;
+      font-weight: 300;
+      letter-spacing: 0.4px;
+      margin: 0.5% 0 2%;
+    }
+  }
 }
