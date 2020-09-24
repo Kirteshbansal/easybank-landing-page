@@ -184,8 +184,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    // margin-bottom: 5%;
     margin-bottom: 0.5em;
-    padding: 0 0.3em;
+    padding: 5em 0.3em;
 
     .article {
       width: 24%;
@@ -261,19 +262,25 @@
           display: flex;
           flex-flow: row nowrap;
           align-items: center;
+          justify-content: center;
+          margin-bottom: 0.5em;
+          width: 100%;
 
-          a {
-            margin: 0.5em;
-            img {
-              width: 1.4em;
-              height: 1.4em;
+          .svg-icon {
+            margin: 0 5px;
+            path {
+              transition: 0.1s ease;
+
+              &:hover {
+                fill: $lime_green;
+              }
             }
           }
         }
       }
 
       .footer_sec2 {
-        width: 12%;
+        width: 15%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -291,7 +298,7 @@
     }
 
     .footer_sec3 {
-      width: 48%;
+      width: 42%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
