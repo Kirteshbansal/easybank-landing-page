@@ -263,7 +263,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.5em;
-    padding: 0 0.3em;
+    padding: 5em 0.3em;
   }
   .articles_container .article {
     width: 24%;
@@ -331,16 +331,21 @@ a {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5em;
+    width: 100%;
   }
-  .footer .footer_wrapper .footer_sec1 .social_icons a {
-    margin: 0.5em;
+  .footer .footer_wrapper .footer_sec1 .social_icons .svg-icon {
+    margin: 0 5px;
   }
-  .footer .footer_wrapper .footer_sec1 .social_icons a img {
-    width: 1.4em;
-    height: 1.4em;
+  .footer .footer_wrapper .footer_sec1 .social_icons .svg-icon path {
+    transition: 0.1s ease;
+  }
+  .footer .footer_wrapper .footer_sec1 .social_icons .svg-icon path:hover {
+    fill: #31d35c;
   }
   .footer .footer_wrapper .footer_sec2 {
-    width: 12%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -355,7 +360,7 @@ a {
     color: #31d35c;
   }
   .footer .footer_sec3 {
-    width: 48%;
+    width: 42%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -522,14 +527,13 @@ a {
   .footer .footer_sec1 .social_icons {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
+    margin: 1em;
+    width: 60%;
   }
-  .footer .footer_sec1 .social_icons a {
-    margin: 0.5em;
-  }
-  .footer .footer_sec1 .social_icons a img {
-    width: 1.4em;
-    height: 1.4em;
+  .footer .footer_sec1 .social_icons .svg-icon {
+    margin: 0 6px;
   }
   .footer .footer_sec2 {
     display: flex;
