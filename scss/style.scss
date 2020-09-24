@@ -171,14 +171,13 @@
       .social_icons {
         display: flex;
         flex-flow: row nowrap;
+        justify-content: center;
         align-items: center;
+        margin: 1em;
+        width: 60%;
 
-        a {
-          margin: 0.5em;
-          img {
-            width: 1.4em;
-            height: 1.4em;
-          }
+        .svg-icon {
+          margin: 0 6px;
         }
       }
     }
